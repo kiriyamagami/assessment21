@@ -1,0 +1,74 @@
+
+#wrapper{display:grid;
+grid-template-areas:
+"nestedgrid"
+    "ImageScrollbar"
+    "nestedgrid1"
+    "Footer";
+background-color:lightblue;
+color:black;}
+
+#nestedgrid{
+    grid-area:nestedgrid;
+    display:grid;
+grid-template-areas:"Home AboutMe Culture";
+    background-color:lightsteelblue;
+    color:black;
+     padding:10px;
+    grid-gap:10px;
+        text-align:center;
+
+}
+
+
+#Home{grid-area:Home;
+ background-color: darkgray;
+padding:25px;
+    text-align:center;
+
+}
+#AboutMe{grid-area:AboutMe;
+background-color:darkgray;
+padding:25px;
+    text-align:center;
+
+}
+#Culture{grid-area:Culture;
+background-color:darkgray;
+padding:25px;
+text-align:center;
+}
+
+
+#ImageScrollbar{grid-area:ImageScrollbar;
+    margin-top:20px;
+
+   }
+#img{width:50%;
+height:10%;}
+
+
+#nestedgrid1{
+    grid-area:nestedgrid1;
+    display:grid;
+grid-template-areas:"paragraph photo1 photo2";
+        text-align:left;
+    background-color:lightsteelblue;
+    color:black;
+     padding:70px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    grid-gap:10px;     
+}
+img {width:100%;
+height:100%;}
+#Footer{grid-area:Footer;
+padding:40px;
+        text-align:center;
+     background-color:darkgray;
+           color:black;
+
+}
